@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",          /* Menggunakan standar JavaScript modern yang dimengerti semua browser */
+    "module": "ES2015",          /* Menghentikan penggunaan 'exports' ala Node.js */
+    "strict": true,              /* Tetap menjaga aturan ketat TypeScript */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

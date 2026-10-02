@@ -1,0 +1,195 @@
+
+/* Membuat efek meluncur halus saat menu navigasi diklik */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Jarak aman agar judul ruangan tidak tertutup Navbar */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FDFCF8; 
+    color: #333333;
+    padding-top: 80px; 
+}
+
+.navbar {
+    background-color: #FDFCF8;
+    transition: all 0.3s ease; 
+}
+
+
+.nav-link {
+    color: #555555 !important;
+    margin: 0 10px;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+}
+
+
+.active-link {
+    color: #000000 !important;
+    border-bottom: 2px solid #000000;
+}
+
+
+.custom-btn {
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+.hero-section {
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+
+.hero-img {
+    max-height: 550px;
+    object-fit: cover; 
+    border-radius: 24px !important;
+}
+
+
+.floating-text {
+    position: absolute;
+    top: 15%;
+    right: -20px;
+    font-family: 'Brush Script MT', cursive; 
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    transform: rotate(-10deg);
+    z-index: 10;
+    line-height: 1.2;
+}
+
+
+@media (max-width: 991px) {
+    .floating-text {
+        display: none;
+    }
+}
+
+.social-link {
+    color: #333333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: #000000;
+    transform: translateY(-3px); 
+}
+
+
+
+.skill-card {
+    background-color: #ffffff;
+    transition: all 0.3s ease; 
+    cursor: default;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08) !important; 
+    border-color: transparent !important;
+}
+
+.icon-box {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-orange { background-color: #FF5722; }
+.bg-blue { background-color: #2196F3; }
+.bg-purple { background-color: #7952B3; }
+.bg-yellow { background-color: #FFDF00; }
+.bg-blue-dark { background-color: #3178C6; }
+.bg-teal { background-color: #009688; }
+
+/* ================= PROJECTS SECTION ================= */
+
+/* Transisi untuk link 'Lihat Semua Proyek' */
+.view-all-link {
+    transition: color 0.3s ease;
+}
+.view-all-link:hover {
+    color: #555555 !important;
+}
+.view-all-link i {
+    transition: transform 0.3s ease;
+}
+.view-all-link:hover i {
+    transform: translateX(5px); /* Panah bergerak ke kanan saat disorot */
+}
+
+/* Gaya Kartu Proyek */
+.project-card {
+    transition: all 0.4s ease;
+    cursor: pointer; /* Memberi tahu user bahwa ini bisa diklik */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Kartu terangkat */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important; /* Bayangan tebal halus */
+}
+
+/* Memastikan gambar seragam ukurannya */
+.project-img-wrapper img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Panah kecil di dalam kartu */
+.project-arrow {
+    color: #cccccc;
+    transition: all 0.3s ease;
+}
+.project-card:hover .project-arrow {
+    color: #000000;
+    transform: translateX(4px) scale(1.1); /* Panah maju dan sedikit membesar */
+}
+
+/* Gaya label/badge teknologi */
+.tech-badge {
+    background-color: #F3F4F6;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+/* ================= ABOUT, CONTACT & FOOTER ================= */
+
+/* Memastikan gambar selalu proporsional dan tidak gepeng */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Modifikasi kotak isian formulir agar terlihat elegan saat diklik */
+.form-control:focus {
+    box-shadow: none; /* Menghilangkan efek glow biru bawaan browser */
+    border: 1px solid #333333 !important; /* Memberi garis tepi hitam tipis */
+    background-color: #ffffff !important;
+}
+
+/* Efek sentuhan untuk ikon sosial media di footer */
+.hover-white {
+    transition: color 0.3s ease;
+}
+
+.hover-white:hover {
+    color: #ffffff !important;
+}
