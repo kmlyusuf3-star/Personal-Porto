@@ -518,6 +518,30 @@ body { background: var(--paper); }
     box-shadow: 0 2px 14px rgba(29, 29, 31, .035);
 }
 .nav-cta, .btn-forest, .btn-outline-forest { border-radius: 999px; }
+.language-control {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin-right: .65rem;
+    padding: .55rem .8rem;
+    border: 1px solid #e3e5e8;
+    border-radius: 999px;
+    background: rgba(255,255,255,.88);
+    color: #58625b;
+    font-size: .82rem;
+}
+.language-control i { color: var(--forest); font-size: .95rem; }
+.language-control select {
+    max-width: 132px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+.language-control select:focus-visible { outline: 2px solid rgba(41,72,58,.35); outline-offset: 3px; border-radius: 5px; }
 .hero-section h1 { letter-spacing: -.065em; }
 .portrait-frame { border-radius: 28px; }
 .portrait-wrap::before { border-radius: 30px; }
@@ -574,6 +598,14 @@ body { background: var(--paper); }
     font-weight: 600;
 }
 .project-gallery-card--portrait img { object-fit: contain; background: #0c1528; }
+.project-modal-gallery--single { grid-template-columns: minmax(0, 1fr); }
+.project-modal-gallery--single .project-gallery-card { width: min(100%, 390px); margin-inline: auto; }
+.project-modal-gallery--single .project-gallery-card--portrait img {
+    aspect-ratio: auto;
+    max-height: 660px;
+    object-fit: contain;
+    background: #f7f2eb;
+}
 .project-modal .modal-lead { max-width: 850px; font-size: 1rem; line-height: 1.75; }
 .project-modal .modal-detail { color: var(--muted); font-size: .87rem; line-height: 1.8; }
 .project-modal .modal-detail p { margin: 0 0 .85rem; }
@@ -617,6 +649,7 @@ body { background: var(--paper); }
     .project-card { border-radius: 21px; }
     .project-modal .modal-header { padding: 1.4rem 1.35rem .8rem; }
     .project-modal .modal-body { padding: .5rem 1.35rem 1.5rem; }
+    .language-control { width: fit-content; margin: .4rem 0 .6rem; }
     .project-modal-gallery { grid-template-columns: 1fr; gap: 11px; }
     .project-gallery-card { border-radius: 16px; }
     .project-gallery-card img { border-radius: 12px; }

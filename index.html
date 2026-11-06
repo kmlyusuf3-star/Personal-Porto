@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="assets/img/yklogo.png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Navigasi utama">
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Navigasi utama" data-i18n-aria="ariaNavMain">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="Yusuf Kamal, kembali ke beranda">
                 <img src="assets/img/yklogo.png" alt="" class="brand-logo">
@@ -23,21 +23,34 @@
                 </span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka navigasi">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka navigasi" data-i18n-aria="ariaOpenNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active-link" href="#home">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link active-link" href="#home" data-i18n="navHome">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="navAbout">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="navSkills">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="navProjects">Proyek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="navContact">Kontak</a></li>
                 </ul>
+                <div class="language-control">
+                    <i class="bi bi-translate" aria-hidden="true"></i>
+                    <label for="languageSelect" class="visually-hidden" data-i18n="languageLabel">Bahasa halaman</label>
+                    <select id="languageSelect" aria-label="Ubah bahasa halaman" data-i18n-aria="languageLabel">
+                        <option value="id">Indonesia</option>
+                        <option value="en-US">English (US)</option>
+                        <option value="en-GB">English (UK)</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh-CN">中文</option>
+                        <option value="ja">日本語</option>
+                        <option value="ru">Русский</option>
+                    </select>
+                </div>
                 <a href="https://wa.me/6287759673821" target="_blank" rel="noopener noreferrer" class="btn btn-forest nav-cta">
                     <i class="bi bi-whatsapp" aria-hidden="true"></i>
-                    <span>Hubungi saya</span>
+                    <span data-i18n="contactNav">Hubungi saya</span>
                 </a>
             </div>
         </div>
@@ -50,20 +63,20 @@
                     <div class="col-lg-6 order-2 order-lg-1">
                         <p class="eyebrow"><span class="eyebrow-mark"></span> FULLSTACK DEVELOPER <span class="eyebrow-divider">/</span> INDONESIA</p>
                         <h1>Yusuf Kamal<span class="name-period">.</span></h1>
-                        <h2>Membangun web yang <span>jelas, berguna, dan nyaman digunakan.</span></h2>
-                        <p class="hero-copy">Saya mengembangkan website dan aplikasi web dari antarmuka hingga sisi server. Saya suka merapikan ide menjadi produk digital yang terasa sederhana bagi penggunanya.</p>
+                        <h2 data-i18n="heroTitle" data-i18n-html="true">Membangun web yang <span>jelas, berguna, dan nyaman digunakan.</span></h2>
+                        <p class="hero-copy" data-i18n="heroCopy">Saya mengembangkan website dan aplikasi web dari antarmuka hingga sisi server. Saya suka merapikan ide menjadi produk digital yang terasa sederhana bagi penggunanya.</p>
 
                         <div class="hero-actions">
                             <a href="#projects" class="btn btn-forest btn-lg">
-                                Lihat proyek <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i>
+                                <span data-i18n="heroProjects">Lihat proyek</span> <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i>
                             </a>
                             <a href="https://drive.google.com/file/d/1t7pppncBj1h5BIlJigYya_CrvtIIuQu7/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-forest btn-lg">
-                                <i class="bi bi-file-earmark-arrow-down me-2" aria-hidden="true"></i> Lihat CV
+                                <i class="bi bi-file-earmark-arrow-down me-2" aria-hidden="true"></i> <span data-i18n="heroCv">Lihat CV</span>
                             </a>
                         </div>
 
-                        <div class="hero-socials" aria-label="Tautan sosial">
-                            <span>Terhubung</span>
+                        <div class="hero-socials" aria-label="Tautan sosial" data-i18n-aria="ariaSocialLinks">
+                            <span data-i18n="socialConnect">Terhubung</span>
                             <a href="https://github.com/kmlyusuf3-star/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
                             <a href="https://www.linkedin.com/in/kamalyusuf3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                             <a href="https://t.me/yusfenn" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
@@ -78,7 +91,7 @@
                             </div>
                             <div class="portrait-caption">
                                 <span class="caption-line"></span>
-                                <span>Web development, end to end.</span>
+                                <span data-i18n="heroCaption">Web development, end to end.</span>
                             </div>
                             <span class="portrait-index">YK&nbsp; / &nbsp;01</span>
                         </div>
@@ -90,20 +103,20 @@
         <section id="about" class="about-section section-anchor">
             <div class="container">
                 <div class="about-panel">
-                    <div class="about-label"><span>01</span> TENTANG SAYA</div>
+                    <div class="about-label"><span>01</span> <span data-i18n="aboutLabel">TENTANG SAYA</span></div>
                     <div class="row g-4 align-items-end">
                         <div class="col-lg-5">
-                            <h2>Teknologi yang baik terasa <em>manusiawi.</em></h2>
+                            <h2 data-i18n="aboutHeading" data-i18n-html="true">Teknologi yang baik terasa <em>manusiawi.</em></h2>
                         </div>
                         <div class="col-lg-6 offset-lg-1">
-                            <p>Saya seorang Fullstack Developer yang menikmati proses membangun aplikasi web secara menyeluruh—mulai dari menyusun antarmuka, menghubungkan API, hingga mengelola data. Saya terbuka pada ide baru, nyaman bekerja kolaboratif, dan selalu berusaha memahami kebutuhan sebelum menentukan solusi.</p>
-                            <a href="#contact" class="text-link">Ceritakan ide Anda <i class="bi bi-arrow-right"></i></a>
+                            <p data-i18n="aboutCopy">Saya seorang Fullstack Developer yang menikmati proses membangun aplikasi web secara menyeluruh—mulai dari menyusun antarmuka, menghubungkan API, hingga mengelola data. Saya terbuka pada ide baru, nyaman bekerja kolaboratif, dan selalu berusaha memahami kebutuhan sebelum menentukan solusi.</p>
+                            <a href="#contact" class="text-link"><span data-i18n="aboutCta">Ceritakan ide Anda</span> <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="about-principles">
-                        <div><span>01</span><strong>Rapi dan terukur</strong><small>Struktur yang mudah dipahami dan dikembangkan.</small></div>
-                        <div><span>02</span><strong>Berangkat dari pengguna</strong><small>Alur yang jelas di berbagai ukuran layar.</small></div>
-                        <div><span>03</span><strong>Terus bertumbuh</strong><small>Terbuka pada masukan dan cara kerja baru.</small></div>
+                        <div><span>01</span><strong data-i18n="principleOneTitle">Rapi dan terukur</strong><small data-i18n="principleOneCopy">Struktur yang mudah dipahami dan dikembangkan.</small></div>
+                        <div><span>02</span><strong data-i18n="principleTwoTitle">Berangkat dari pengguna</strong><small data-i18n="principleTwoCopy">Alur yang jelas di berbagai ukuran layar.</small></div>
+                        <div><span>03</span><strong data-i18n="principleThreeTitle">Terus bertumbuh</strong><small data-i18n="principleThreeCopy">Terbuka pada masukan dan cara kerja baru.</small></div>
                     </div>
                 </div>
             </div>
@@ -113,18 +126,18 @@
             <div class="container">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">02 <span class="eyebrow-divider">/</span> TOOLKIT</p>
-                        <h2>Teknologi yang saya gunakan</h2>
+                        <p class="eyebrow">02 <span class="eyebrow-divider">/</span> <span data-i18n="skillsKicker">TOOLKIT</span></p>
+                        <h2 data-i18n="skillsTitle">Teknologi yang saya gunakan</h2>
                     </div>
-                    <p class="section-intro">Pilihan tools untuk membangun dan menghubungkan produk web.</p>
+                    <p class="section-intro" data-i18n="skillsIntro">Pilihan tools untuk membangun dan menghubungkan produk web.</p>
                 </div>
 
                 <div class="skill-groups">
                     <article class="skill-group">
                         <div class="skill-group-icon"><i class="bi bi-window"></i></div>
                         <div>
-                            <h3>Frontend</h3>
-                            <p>Menyusun antarmuka yang responsif dan mudah digunakan.</p>
+                            <h3 data-i18n="skillFrontendTitle">Frontend</h3>
+                            <p data-i18n="skillFrontendCopy">Menyusun antarmuka yang responsif dan mudah digunakan.</p>
                             <ul class="skill-tags">
                                 <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React.js</li><li>Bootstrap</li><li>PWA</li>
                             </ul>
@@ -133,8 +146,8 @@
                     <article class="skill-group">
                         <div class="skill-group-icon"><i class="bi bi-braces"></i></div>
                         <div>
-                            <h3>Backend</h3>
-                            <p>Membangun logika aplikasi dan layanan web.</p>
+                            <h3 data-i18n="skillBackendTitle">Backend</h3>
+                            <p data-i18n="skillBackendCopy">Membangun logika aplikasi dan layanan web.</p>
                             <ul class="skill-tags">
                                 <li>Node.js</li><li>Express.js</li><li>PHP</li><li>REST API</li>
                             </ul>
@@ -143,8 +156,8 @@
                     <article class="skill-group">
                         <div class="skill-group-icon"><i class="bi bi-database"></i></div>
                         <div>
-                            <h3>Database &amp; ORM</h3>
-                            <p>Mengelola data dan interaksi aplikasi dengan database.</p>
+                            <h3 data-i18n="skillDataTitle">Database &amp; ORM</h3>
+                            <p data-i18n="skillDataCopy">Mengelola data dan interaksi aplikasi dengan database.</p>
                             <ul class="skill-tags">
                                 <li>MySQL</li><li>PostgreSQL</li><li>Prisma ORM</li>
                             </ul>
@@ -153,8 +166,8 @@
                     <article class="skill-group">
                         <div class="skill-group-icon"><i class="bi bi-git"></i></div>
                         <div>
-                            <h3>Workflow</h3>
-                            <p>Kolaborasi dan pengelolaan kode sehari-hari.</p>
+                            <h3 data-i18n="skillWorkflowTitle">Workflow</h3>
+                            <p data-i18n="skillWorkflowCopy">Kolaborasi dan pengelolaan kode sehari-hari.</p>
                             <ul class="skill-tags">
                                 <li>Git</li><li>GitHub</li><li>Figma</li>
                             </ul>
@@ -168,17 +181,17 @@
             <div class="container">
                 <div class="section-heading projects-heading">
                     <div>
-                        <p class="eyebrow">03 <span class="eyebrow-divider">/</span> PILIHAN KARYA</p>
-                        <h2>Proyek yang pernah dikerjakan</h2>
+                        <p class="eyebrow">03 <span class="eyebrow-divider">/</span> <span data-i18n="projectsKicker">PILIHAN KARYA</span></p>
+                        <h2 data-i18n="projectsTitle">Proyek yang pernah dikerjakan</h2>
                     </div>
-                    <p class="section-intro">Beberapa karya yang menunjukkan proses dan hal yang saya pelajari.</p>
+                    <p class="section-intro" data-i18n="projectsIntro">Beberapa karya yang menunjukkan proses dan hal yang saya pelajari.</p>
                 </div>
 
-                <div class="project-filters" role="group" aria-label="Filter proyek">
-                    <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">Semua</button>
-                    <button type="button" class="filter-button" data-filter="web-app" aria-pressed="false">Web App</button>
-                    <button type="button" class="filter-button" data-filter="pwa" aria-pressed="false">PWA</button>
-                    <button type="button" class="filter-button" data-filter="landing-page" aria-pressed="false">Landing Page</button>
+                <div class="project-filters" role="group" aria-label="Filter proyek" data-i18n-aria="filterLabel">
+                    <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true" data-i18n="filterAll">Semua</button>
+                    <button type="button" class="filter-button" data-filter="web-app" aria-pressed="false" data-i18n="filterWeb">Web App</button>
+                    <button type="button" class="filter-button" data-filter="pwa" aria-pressed="false" data-i18n="filterPwa">PWA</button>
+                    <button type="button" class="filter-button" data-filter="landing-page" aria-pressed="false" data-i18n="filterLanding">Landing Page</button>
                     <span class="project-count" id="projectCount" aria-live="polite">6 proyek</span>
                 </div>
 
@@ -186,17 +199,17 @@
                     <div class="col-md-6 col-xl-4 project-item" data-category="web-app">
                         <article class="project-card">
                             <div class="project-art art-serasi">
-                                <span class="art-index">01 — WEB APP</span>
+                                <span class="art-index">01 — <span data-i18n="typeWeb">WEB APP</span></span>
                                 <span class="art-symbol" aria-hidden="true">S</span>
                                 <span class="art-title">SERASI</span>
-                                <span class="art-caption">DIGITAL EXPERIENCE</span>
+                                <span class="art-caption" data-i18n="serasiArtCaption">DIGITAL EXPERIENCE</span>
                             </div>
                             <div class="project-content">
-                                <div class="project-type">Web Application </div>
+                                <div class="project-type" data-i18n="typeWebApp">Web Application</div>
                                 <h3>SERASI</h3>
-                                <p>Aplikasi web dengan antarmuka yang menata informasi dan alur utama agar lebih mudah dipahami.</p>
-                                <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="SERASI" data-category="Web Application" data-description="Aplikasi web dengan antarmuka yang menata informasi dan alur utama agar lebih mudah dipahami." data-detail="Proyek ini berfokus pada penyajian informasi, navigasi yang jelas, dan pengalaman penggunaan yang konsisten." data-stack="Web App|UI/UX|Responsive Design" data-link="https://examp.url.com">
-                                    Lihat detail <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                                <p data-i18n="cardSerasi">Aplikasi pencocok warna hijab dan outfit yang menganalisis palet foto OOTD, memberi rekomendasi padu padan, dan menyimpan hasilnya dalam lemari digital.</p>
+                                <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="serasi" data-title="Serasi" data-category="Fashion-tech · Web App" data-description="Aplikasi pencocok warna hijab dan outfit yang menganalisis palet foto OOTD, memberi rekomendasi padu padan, dan menyimpan hasilnya dalam Lemari OOTD." data-detail="Aplikasi web untuk analisis palet warna OOTD dan rekomendasi hijab." data-stack="React 19|TypeScript|Vite|Tailwind CSS 4|Node.js|Express|Supabase|Midtrans Snap|HTML Canvas" data-link="https://examp.url.com">
+                                    <span data-i18n="projectOpen">Lihat detail</span> <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -205,17 +218,17 @@
                     <div class="col-md-6 col-xl-4 project-item" data-category="pwa">
                         <article class="project-card">
                             <div class="project-art art-jajanbuah">
-                                <span class="art-index">02 — PROGRESSIVE WEB APP</span>
+                                <span class="art-index">02 — <span data-i18n="typePwaLong">PROGRESSIVE WEB APP</span></span>
                                 <span class="fruit-mark" aria-hidden="true"><i class="bi bi-apple"></i></span>
                                 <span class="art-title">JajanBuah</span>
-                                <span class="art-caption">SEGAR • PRAKTIS • DIGITAL</span>
+                                <span class="art-caption" data-i18n="jajanArtCaption">SEGAR • PRAKTIS • DIGITAL</span>
                             </div>
                             <div class="project-content">
-                                <div class="project-type">Progressive Web App </div>
+                                <div class="project-type" data-i18n="typePwaFull">Progressive Web App</div>
                                 <h3>PWA JajanBuah</h3>
-                                <p>Pengalaman katalog buah yang dirancang ringan dan nyaman diakses dari perangkat mobile.</p>
+                                <p data-i18n="cardJajan">Pengalaman katalog buah yang dirancang ringan dan nyaman diakses dari perangkat mobile.</p>
                                 <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="jajanbuah" data-title="JajanBuah" data-category="Fruit Operations &amp; Fulfillment Management" data-description="Aplikasi operasional untuk mengelola pemesanan buah segar sampai pemenuhan pesanan." data-detail="PWA untuk operasional pesanan dan fulfillment buah segar." data-stack="React 19|TypeScript|Node.js|Express.js|SQLite" data-link="https://examp.url.com">
-                                    Lihat detail <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                                    <span data-i18n="projectOpen">Lihat detail</span> <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -228,11 +241,11 @@
                                 <span class="photo-label">TASK MANAGER</span>
                             </div>
                             <div class="project-content">
-                                <div class="project-type">Web Application </div>
+                                <div class="project-type" data-i18n="typeWebApp">Web Application</div>
                                 <h3>Task Manager App</h3>
-                                <p>Aplikasi pengelola tugas dengan fitur CRUD dan penyimpanan lokal di browser.</p>
-                                <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Task Manager App" data-category="Web Application" data-description="Aplikasi pengelola tugas dengan fitur CRUD dan penyimpanan lokal di browser." data-detail="Proyek ini membantu pengguna mencatat, memperbarui, dan menghapus tugas melalui antarmuka yang sederhana." data-stack="HTML|CSS|JavaScript|Local Storage" data-link="https://examp.url.com">
-                                    Lihat detail <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                                <p data-i18n="cardTask">Aplikasi pengelola tugas dengan fitur CRUD dan penyimpanan lokal di browser.</p>
+                                <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="taskManager" data-title="Task Manager App" data-category="Web Application" data-description="Aplikasi pengelola tugas dengan fitur CRUD dan penyimpanan lokal di browser." data-detail="Proyek ini membantu pengguna mencatat, memperbarui, dan menghapus tugas melalui antarmuka yang sederhana." data-stack="HTML|CSS|JavaScript|Local Storage" data-link="https://examp.url.com">
+                                    <span data-i18n="projectOpen">Lihat detail</span> <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -245,11 +258,11 @@
                                 <span class="photo-label">PERSONAL PORTFOLIO</span>
                             </div>
                             <div class="project-content">
-                                <div class="project-type">Web Application </div>
+                                <div class="project-type" data-i18n="typeWebApp">Web Application</div>
                                 <h3>Personal Portfolio</h3>
-                                <p>Website portofolio untuk memperkenalkan profil, keahlian, dan proyek dalam satu tempat.</p>
-                                <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Personal Portfolio" data-category="Web Application" data-description="Website portofolio untuk memperkenalkan profil, keahlian, dan proyek dalam satu tempat." data-detail="Dirancang responsif dengan navigasi yang ringkas dan informasi yang mudah dipindai." data-stack="HTML|CSS|JavaScript|Bootstrap" data-link="https://examp.url.com">
-                                    Lihat detail <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                                <p data-i18n="cardPortfolio">Website portofolio untuk memperkenalkan profil, keahlian, dan proyek dalam satu tempat.</p>
+                                <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="personalPortfolio" data-title="Personal Portfolio" data-category="Web Application" data-description="Website portofolio untuk memperkenalkan profil, keahlian, dan proyek dalam satu tempat." data-detail="Dirancang responsif dengan navigasi yang ringkas dan informasi yang mudah dipindai." data-stack="HTML|CSS|JavaScript|Bootstrap" data-link="https://examp.url.com">
+                                    <span data-i18n="projectOpen">Lihat detail</span> <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -258,17 +271,17 @@
                     <div class="col-md-6 col-xl-4 project-item" data-category="web-app">
                         <article class="project-card">
                             <div class="project-art art-commerce">
-                                <span class="art-index">05 — WEB APP</span>
+                                <span class="art-index">05 — <span data-i18n="typeWeb">WEB APP</span></span>
                                 <span class="commerce-icon" aria-hidden="true"><i class="bi bi-bag"></i></span>
                                 <span class="art-title">MINI STORE</span>
-                                <span class="art-caption">A SIMPLE SHOPPING FLOW</span>
+                                <span class="art-caption" data-i18n="commerceArtCaption">A SIMPLE SHOPPING FLOW</span>
                             </div>
                             <div class="project-content">
-                                <div class="project-type">Web Application </div>
+                                <div class="project-type" data-i18n="typeWebApp">Web Application</div>
                                 <h3>E-Commerce Mini</h3>
-                                <p>Prototipe toko online sederhana dengan alur katalog dan keranjang belanja.</p>
-                                <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="E-Commerce Mini" data-category="Web Application" data-description="Prototipe toko online sederhana dengan alur katalog dan keranjang belanja." data-detail="Proyek ini mengeksplorasi alur belanja dasar dan menyimpan pilihan pengguna di browser." data-stack="HTML|CSS|JavaScript|Local Storage" data-link="https://examp.url.com">
-                                    Lihat detail <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                                <p data-i18n="cardCommerce">Prototipe toko online sederhana dengan alur katalog dan keranjang belanja.</p>
+                                <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="ecommerceMini" data-title="E-Commerce Mini" data-category="Web Application" data-description="Prototipe toko online sederhana dengan alur katalog dan keranjang belanja." data-detail="Proyek ini mengeksplorasi alur belanja dasar dan menyimpan pilihan pengguna di browser." data-stack="HTML|CSS|JavaScript|Local Storage" data-link="https://examp.url.com">
+                                    <span data-i18n="projectOpen">Lihat detail</span> <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -281,19 +294,19 @@
                                 <span class="photo-label">LUNALEV</span>
                             </div>
                             <div class="project-content">
-                                <div class="project-type">Landing Page </div>
+                                <div class="project-type" data-i18n="typeLanding">Landing Page</div>
                                 <h3>LunaLev</h3>
-                                <p>Landing page produk dengan tampilan responsif dan konten promosi yang terarah.</p>
+                                <p data-i18n="cardLuna">Landing page produk dengan tampilan responsif dan konten promosi yang terarah.</p>
                                 <div class="project-actions">
-                                    <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="LunaLev" data-category="Landing Page" data-description="Landing page produk dengan tampilan responsif dan konten promosi yang terarah." data-detail="Halaman ini menyajikan informasi produk dengan hierarki visual yang jelas dan ajakan bertindak yang mudah ditemukan." data-stack="HTML|CSS|TypeScript|Bootstrap" data-link="https://lunalev.netlify.app/">
-                                        Lihat detail <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                                    <button type="button" class="project-open" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="lunaLev" data-title="LunaLev" data-category="Landing Page" data-description="Landing page produk dengan tampilan responsif dan konten promosi yang terarah." data-detail="Halaman ini menyajikan informasi produk dengan hierarki visual yang jelas dan ajakan bertindak yang mudah ditemukan." data-stack="HTML|CSS|TypeScript|Bootstrap" data-link="https://lunalev.netlify.app/">
+                                        <span data-i18n="projectOpen">Lihat detail</span> <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
                         </article>
                     </div>
                 </div>
-                <p class="empty-filter d-none" id="emptyFilter">Tidak ada proyek pada kategori ini.</p>
+                <p class="empty-filter d-none" id="emptyFilter" data-i18n="emptyProjects">Tidak ada proyek pada kategori ini.</p>
             </div>
         </section>
 
@@ -301,20 +314,20 @@
             <div class="container">
                 <div class="contact-panel">
                     <div class="contact-copy">
-                        <p class="eyebrow">04 <span class="eyebrow-divider">/</span> KONTAK</p>
-                        <h2>Ada ide yang ingin diwujudkan?</h2>
-                        <p>Saya terbuka untuk diskusi proyek, kolaborasi, atau sekadar bertukar pikiran seputar web development.</p>
-                        <a href="https://wa.me/6287759673821" target="_blank" rel="noopener noreferrer" class="contact-direct"><i class="bi bi-whatsapp"></i> Chat via WhatsApp <i class="bi bi-arrow-up-right"></i></a>
+                        <p class="eyebrow">04 <span class="eyebrow-divider">/</span> <span data-i18n="contactKicker">KONTAK</span></p>
+                        <h2 data-i18n="contactTitle">Ada ide yang ingin diwujudkan?</h2>
+                        <p data-i18n="contactCopy">Saya terbuka untuk diskusi proyek, kolaborasi, atau sekadar bertukar pikiran seputar web development.</p>
+                        <a href="https://wa.me/6287759673821" target="_blank" rel="noopener noreferrer" class="contact-direct"><i class="bi bi-whatsapp"></i> <span data-i18n="contactDirect">Chat via WhatsApp</span> <i class="bi bi-arrow-up-right"></i></a>
                     </div>
                     <form id="contactForm" class="contact-form">
-                        <label for="senderName">Nama</label>
-                        <input type="text" id="senderName" name="name" class="form-control" placeholder="Nama Anda" autocomplete="name" required>
-                        <label for="senderEmail">Email</label>
-                        <input type="email" id="senderEmail" name="email" class="form-control" placeholder="nama@email.com" autocomplete="email" required>
-                        <label for="senderMessage">Pesan</label>
-                        <textarea id="senderMessage" name="message" class="form-control" rows="3" placeholder="Ceritakan sedikit tentang kebutuhan Anda..." required></textarea>
-                        <button type="submit" class="btn btn-forest w-100">Kirim melalui WhatsApp <i class="bi bi-arrow-up-right ms-2"></i></button>
-                        <small>Pesan akan dibuka di WhatsApp untuk Anda kirim.</small>
+                        <label for="senderName" data-i18n="formName">Nama</label>
+                        <input type="text" id="senderName" name="name" class="form-control" placeholder="Nama Anda" data-i18n-placeholder="formNamePlaceholder" autocomplete="name" required>
+                        <label for="senderEmail" data-i18n="formEmail">Email</label>
+                        <input type="email" id="senderEmail" name="email" class="form-control" placeholder="nama@email.com" data-i18n-placeholder="formEmailPlaceholder" autocomplete="email" required>
+                        <label for="senderMessage" data-i18n="formMessage">Pesan</label>
+                        <textarea id="senderMessage" name="message" class="form-control" rows="3" placeholder="Ceritakan sedikit tentang kebutuhan Anda..." data-i18n-placeholder="formMessagePlaceholder" required></textarea>
+                        <button type="submit" class="btn btn-forest w-100"><span data-i18n="formSubmit">Kirim melalui WhatsApp</span> <i class="bi bi-arrow-up-right ms-2"></i></button>
+                        <small data-i18n="formNote">Pesan akan dibuka di WhatsApp untuk Anda kirim.</small>
                     </form>
                 </div>
             </div>
@@ -324,7 +337,7 @@
     <footer class="site-footer">
         <div class="container footer-inner">
             <a href="#home" class="footer-brand">YK<span>.</span></a>
-            <p>Merancang dan membangun web dengan tujuan yang jelas.</p>
+            <p data-i18n="footerMotto">Merancang dan membangun web dengan tujuan yang jelas.</p>
             <span>© <span id="currentYear">2026</span> Yusuf Kamal</span>
         </div>
     </footer>
@@ -337,23 +350,23 @@
                         <p class="eyebrow mb-2" id="projectModalCategory">PROJECT DETAILS</p>
                         <h2 class="modal-title" id="projectModalTitle">Nama Proyek</h2>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup" data-i18n-aria="modalClose"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="project-modal-gallery d-none" id="projectModalGallery" aria-label="Cuplikan antarmuka PWA JajanBuah"></div>
+                    <div class="project-modal-gallery d-none" id="projectModalGallery" aria-label="Cuplikan antarmuka proyek" data-i18n-aria="ariaProjectImages"></div>
                     <p id="projectModalDescription" class="modal-lead"></p>
                     <div id="projectModalDetail" class="modal-detail"></div>
                     <section id="projectModalFeaturesSection" class="modal-features d-none">
-                        <h3>Fitur utama</h3>
+                        <h3 data-i18n="modalFeatures">Fitur utama</h3>
                         <ul id="projectModalFeatures"></ul>
                     </section>
                     <section class="modal-tech-section">
-                        <h3>Teknologi</h3>
+                        <h3 data-i18n="modalTechnology">Teknologi</h3>
                         <div id="projectModalStack" class="skill-tags modal-tags"></div>
                     </section>
                     <div class="modal-footer-actions">
-                        <a href="#" id="projectModalLink" class="btn btn-forest modal-demo d-none" target="_blank" rel="noopener noreferrer">Buka demo <i class="bi bi-arrow-up-right ms-2"></i></a>
-                        <button type="button" id="projectModalNoDemo" class="btn btn-outline-forest modal-demo d-none" disabled>Demo belum tersedia</button>
+                        <a href="#" id="projectModalLink" class="btn btn-forest modal-demo d-none" target="_blank" rel="noopener noreferrer"><span data-i18n="modalDemo">Buka demo</span> <i class="bi bi-arrow-up-right ms-2"></i></a>
+                        <button type="button" id="projectModalNoDemo" class="btn btn-outline-forest modal-demo d-none" disabled data-i18n="modalNoDemo">Demo belum tersedia</button>
                     </div>
                 </div>
             </div>
@@ -361,6 +374,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/i18n-data.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
